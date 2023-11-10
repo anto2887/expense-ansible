@@ -18,6 +18,14 @@
   ansible.builtin.user:
     name: expense
 
+- name: Import Common Role - App Pre-requisites
+  ansible.builtin.import_roles:
+    name: Common
+    tasks_from: app-pereq
+  vars:
+    app_dir: /app
+    component: backend
+
 - name: Delete old app directory
   ansible.builtin.file:
     path: /app
