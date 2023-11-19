@@ -11,7 +11,7 @@
 
 - name: Start Node Explorer
   ansible.builtin.systemd:
-    name: node-explorter
+    name: node-exporter
     state: restarted
     enabled: yes
     daemon-reload: yes
