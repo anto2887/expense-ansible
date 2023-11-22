@@ -5,7 +5,7 @@
 
 - name: Add Grafana Dashboard
   community.grafana.grafana_dashboard:
-        grafana_url: http://18.215.172.79:3000/
+        grafana_url: http://54.210.22.174:3000/
         # grafana_api_key: "{{ lookup('amazon.aws.aws_ssm', 'grafana.api_key', region='us-east-1' ) }}"
         grafana_api_key: "glsa_draGEqot7wzMUoxRlTAw1eVh33et2vrx_18ba576c"
         state: present
