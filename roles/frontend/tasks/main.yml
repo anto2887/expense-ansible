@@ -46,3 +46,4 @@
     bucket: d76class-prometheus-repo
     object: "{{component}}-{{env}}.yml"
     src: /tmp/{{component}}-{{env}}.yml
+    mode: put
