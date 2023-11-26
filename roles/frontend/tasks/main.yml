@@ -40,3 +40,8 @@
   ansible.builtin.template:
     src: alert-rules.yml
     dest: /tmp/alert-rules.yml
+
+- name: Upload File Alert to S3
+  community.aws.s3_sync:
+    bucket: d76class-prometheus-repo
+    file_root: /tmp/alert-rules.yml
