@@ -19,7 +19,7 @@
     bucket: d76class-prometheus-repo
     mode: get
     object: "{{item}}"
-    prefix: /opt/prometheus/alert-rules/{{item}}
+    dest: /opt/prometheus/alert-rules/{{item}}
   loop: "{{out.s3_keys}}"
 
 - name: Reload Prometheus
