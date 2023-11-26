@@ -45,4 +45,4 @@
   amazon.aws.s3_object:
     bucket: d76class-prometheus-repo
     object: "{{component}}-{{env}}.yml"
-    file_root: /tmp/{{component}}-{{env}}.yml
+    src: /tmp/{{component}}-{{env}}.yml
